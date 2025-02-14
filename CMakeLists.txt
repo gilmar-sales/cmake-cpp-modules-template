@@ -10,6 +10,10 @@ file(GLOB_RECURSE MODULE_FILES src/**.cppm)
 
 add_executable(Main)
 
+target_compile_features(Main
+        PRIVATE cxx_std_23
+        PUBLIC cxx_std_20)
+
 target_sources(Main
         PUBLIC
         ${SOURCE_FILES}
