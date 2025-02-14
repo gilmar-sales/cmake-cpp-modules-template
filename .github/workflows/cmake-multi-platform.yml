@@ -26,12 +26,12 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         build_type: [Release]
         c_compiler: [gcc, clang, cl]
-        generator: ['Ninja', 'Visual Studio']
+        generator: ['Ninja', 'Visual Studio 17 2022']
         include:
           - os: windows-latest
             c_compiler: cl
             cpp_compiler: cl
-            generator: 'Visual Studio'
+            generator: 'Visual Studio 17 2022'
           - os: ubuntu-latest
             c_compiler: gcc
             cpp_compiler: g++
@@ -50,7 +50,7 @@ jobs:
           - os: ubuntu-latest
             c_compiler: cl
           - os: ubuntu-latest
-            generator: 'Visual Studio'
+            generator: 'Visual Studio 17 2022'
 
     steps:
     - uses: actions/checkout@v4
