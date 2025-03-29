@@ -6,7 +6,6 @@ export module HelloWorld;
 
 namespace hello {
 
-    export void world() { std::println("Hello {}", "World"); }
+export void world() { std::println("Hello {}", "World!"); }
 
-}
-
+} // namespace hello
